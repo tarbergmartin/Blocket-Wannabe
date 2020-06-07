@@ -1,26 +1,9 @@
-## blocket-wannabe
+## Blocket Wannabe (TypeScript/React) - An application used for posting sales ads
 
-This is where you include your WebPart documentation.
+**Creation date: 2019-11-04**
 
-### Building the code
+This is a SharePoint Framework (SPFx) web part using TypeScript, React, SharePoint Online and Office UI Fabric. Unfortunately, this application can only be used thorugh the author's SharePoint account at the moment.
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
+Here is a preview of what the application looks like:
 
-This package produces the following:
-
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
-
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+![](gifs/blocket-preview.gif)
