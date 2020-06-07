@@ -1,6 +1,6 @@
 ## blocket-wannabe
 
-This is where you include your WebPart documentation.
+This is a SharePoint Framework (SPFx) web part using TypeScript and SharePoint Online.
 
 ### Building the code
 
@@ -10,12 +10,6 @@ npm i
 npm i -g gulp
 gulp
 ```
-
-This package produces the following:
-
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
 
 ### Build options
 
