@@ -4,4 +4,4 @@ This is a SharePoint Framework (SPFx) web part using TypeScript, React and Share
 
 Here is a preview of what the application looks like:
 
-![](gifs/preview.gif)
+![](gifs/blocket-preview.gif)
