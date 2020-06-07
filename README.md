@@ -1,20 +1,7 @@
 ## blocket-wannabe
 
-This is a SharePoint Framework (SPFx) web part using TypeScript and SharePoint Online.
+This is a SharePoint Framework (SPFx) web part using TypeScript, React and SharePoint Online. Unfortunately, this application can only be used thorugh the author's SharePoint account at the moment.
 
-### Building the code
+Here is a preview of what the application looks like:
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
-
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+![](gifs/preview.gif)
