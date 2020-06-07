@@ -74,7 +74,6 @@ export function sortByPropName(ads: IAdItem[], propName: string, asc: boolean): 
                  [...ads].sort(function (a, b) { return (a[propName] > b[propName]) ? -1 : ((b[propName] > a[propName]) ? 1 : 0); })
 }
 
-
 export async function getAllCategories(): Promise<ICategoryItem[]> {
 
     const store: ITermStore = taxonomy.termStores.getByName('Taxonomy_mzHZJt6CKwm2h90n2KLRXg==');
@@ -105,7 +104,6 @@ export async function addNewCategory(categoryName: string): Promise<ICategoryIte
 
     const store: ITermStore = taxonomy.termStores.getByName('Taxonomy_mzHZJt6CKwm2h90n2KLRXg==');
     const set: ITermSet = store.getTermSetById('5e5392d8-124f-4da0-8df8-ebd72944c97c');
-
     const isValid = await isValidTermCategory(categoryName, set);
 
     if (isValid) {

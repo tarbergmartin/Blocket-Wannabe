@@ -52,7 +52,6 @@ export interface ICategoryItem {
   Id: string;
 }
 
-
 export interface IImagePickerProps {
   imagePath?: string;
   onImageSelected: (file: File) => void;

@@ -3,7 +3,7 @@ import { IProps, IState, IAdItem } from '../interfaces/Interfaces';
 import styles from '../css/BlocketWannabe.module.scss';
 import { Pivot, PivotItem, PivotLinkSize, MessageBarType } from 'office-ui-fabric-react/lib/';
 import { useState, useEffect } from 'react';
-import { Web, sp } from '@pnp/sp';
+import { Web } from '@pnp/sp';
 import { getAllAds, getAllCategories, addNewCategory, addNewAd, updateExistingAd, filterAdsByQuery, removeAd, sortByPropName } from '../helpers/adHelper';
 import { getCurrentUser } from '../helpers/authorizeHelper';
 import AdForm from './Shared/AdForm';
@@ -25,20 +25,13 @@ export default function AdAppContainer(props: IProps): React.ReactElement {
   });
 
   const getData = async (): Promise<void> => {
-   
-   
-    const web = await sp.web.get();
-    const web2 = await state.web.get();
-    console.log(web);
-    console.log(web2);
-
-
     const [ads, categories, currentUser] = await Promise.all([
       getAllAds(state.web),
       getAllCategories(),
       getCurrentUser(state.web)
     ]);
 
+    console.log(currentUser);
     setState({ ...state, ads, categories, currentUser, visibleAds: ads });
   }
 
